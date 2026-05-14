@@ -869,14 +869,56 @@
                 <div class="contact-detail"><p class="contact-detail-label">Billboard Address</p><p class="contact-detail-value">323 Main Road, Sea Point, Cape Town</p></div>
                 <div class="contact-detail"><p class="contact-detail-label">Co-Founders</p><p class="contact-detail-value">Paul Zietsman<br>Zack Daniel van Zyl</p></div>
             </div>
-            <form class="contact-form" onsubmit="submitContact(event)">
-                <div class="form-row"><div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name" required></div><div class="form-group"><label>Company</label><input type="text" placeholder="Company name"></div></div>
-                <div class="form-row"><div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required></div><div class="form-group"><label>Phone</label><input type="tel" placeholder="+27"></div></div>
-                <div class="form-group"><label>Interest</label><select><option value="">Select...</option><option>Premium — R90,000/month (Full 60s slot)</option><option>Executive — R70,000/month (Half 30s slot)</option><option>Standard — R50,000/month (Quarter 15s slot)</option><option>Notify Me — New Locations</option><option>General Enquiry</option></select></div>
-                <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your advertising goals..."></textarea></div>
-                <button type="submit" class="btn-submit">Send Message</button>
-                <div class="success-msg" id="contactSuccess">✓ &nbsp; Message sent. We'll be in touch shortly.</div>
-            </form>
+           <form class="contact-form" action="https://formspree.io/f/xaqvgyvk" method="POST">
+
+    <div class="form-row">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input name="full_name" type="text" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Company</label>
+            <input name="company" type="text" placeholder="Company name">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label>Email</label>
+            <input name="email" type="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone</label>
+            <input name="phone" type="tel" placeholder="+27">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Interest</label>
+
+        <select name="interest">
+            <option value="">Select...</option>
+            <option>Premium — R90,000/month (Full 60s slot)</option>
+            <option>Executive — R70,000/month (Half 30s slot)</option>
+            <option>Standard — R50,000/month (Quarter 15s slot)</option>
+            <option>Notify Me — New Locations</option>
+            <option>General Enquiry</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Message</label>
+
+        <textarea name="message" placeholder="Tell us about your advertising goals..."></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit">
+        Send Message
+    </button>
+
+</form>
         </div>
     </div>
     <footer><div class="footer-logo"><svg style="width:48px;height:48px;flex-shrink:0;" viewBox="0 0 100 100"><rect width="100" height="100" fill="black"/><text x="50" y="68" font-family="Arial Black,Arial,sans-serif" font-size="62" fill="white" font-weight="bold" text-anchor="middle">Z</text></svg><div><div class="footer-logo-text">Black Zebra</div><p class="footer-tagline">Outdoor Billboard Advertising — South Africa</p></div></div><div class="footer-right"><p>© 2025 Black Zebra. All rights reserved.</p></div></footer>
