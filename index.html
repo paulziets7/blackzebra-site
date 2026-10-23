@@ -70,7 +70,8 @@ nav{position:fixed;top:0;width:100%;background:rgba(0,0,0,0.95);backdrop-filter:
 .quality-pillars{display:grid;gap:2px;}
 .quality-pillar{background:#1a1a1a;padding:28px 24px;display:flex;align-items:flex-start;gap:18px;transition:background 0.3s;}
 .quality-pillar:hover{background:#222;}
-.qp-icon{width:42px;height:42px;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;}
+.qp-icon{width:42px;height:42px;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;color:#111;}
+.qp-icon svg,.trust-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;display:block;}
 .qp-title{font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:5px;}
 .qp-desc{font-size:0.78rem;color:var(--mid-gray);line-height:1.7;}
 .philosophy-strip{background:var(--white);padding:80px 60px;border-top:1px solid var(--border);}
@@ -308,7 +309,7 @@ footer{background:var(--black);padding:48px 60px;display:flex;justify-content:sp
 .book-trust-bar{background:var(--black);padding:0 60px 44px;}
 .book-trust-inner{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding-top:2px;}
 .trust-item{background:#111;padding:20px 18px;display:flex;align-items:center;gap:12px;}
-.trust-icon{font-size:1.2rem;flex-shrink:0;}
+.trust-icon{font-size:1.2rem;flex-shrink:0;color:var(--accent);}
 .trust-text-main{font-size:0.8rem;font-weight:700;color:var(--white);margin-bottom:2px;}
 .trust-text-sub{font-size:0.62rem;color:#555;}
 .book-body{background:var(--light);padding:52px 60px 80px;}
@@ -491,10 +492,10 @@ footer{flex-direction:column;gap:16px;text-align:center;}
 <a href="#" class="quality-cta" onclick="showPage('boards');return false;">See Our Locations <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="display:inline;vertical-align:middle;"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </div>
 <div class="quality-pillars">
-<div class="quality-pillar"><div class="qp-icon">🎯</div><div><div class="qp-title">Location Intelligence</div><div class="qp-desc">Every site is researched for demographic profile, traffic patterns, and proximity to high-value amenities before we install a board.</div></div></div>
-<div class="quality-pillar"><div class="qp-icon">💎</div><div><div class="qp-title">Premium Audiences</div><div class="qp-desc">Our locations are surrounded by luxury apartments, premium gyms, fine dining, and professional districts — ensuring your message reaches high-income audiences.</div></div></div>
-<div class="quality-pillar"><div class="qp-icon">📊</div><div><div class="qp-title">Transparent Reporting</div><div class="qp-desc">You receive clear, honest reporting on your campaign's reach and performance — no guesswork, no inflated numbers.</div></div></div>
-<div class="quality-pillar"><div class="qp-icon">🤝</div><div><div class="qp-title">Limited Slots by Design</div><div class="qp-desc">We cap each billboard at 12 Premium slots. Scarcity is a feature — your brand is never lost in a sea of competitors.</div></div></div>
+<div class="quality-pillar"><div class="qp-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div><div><div class="qp-title">Location Intelligence</div><div class="qp-desc">Every site is researched for demographic profile, traffic patterns, and proximity to high-value amenities before we install a board.</div></div></div>
+<div class="quality-pillar"><div class="qp-icon"><svg viewBox="0 0 24 24"><path d="M6 4h12l4 5-10 11L2 9z"/><path d="M2 9h20M9 4l-2 5 5 11 5-11-2-5"/></svg></div><div><div class="qp-title">Premium Audiences</div><div class="qp-desc">Our locations are surrounded by luxury apartments, premium gyms, fine dining, and professional districts — ensuring your message reaches high-income audiences.</div></div></div>
+<div class="quality-pillar"><div class="qp-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 21v-7M12 21V4M18 21v-11"/></svg></div><div><div class="qp-title">Transparent Reporting</div><div class="qp-desc">You receive clear, honest reporting on your campaign's reach and performance — no guesswork, no inflated numbers.</div></div></div>
+<div class="quality-pillar"><div class="qp-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5"/><rect x="13.5" y="3" width="7.5" height="7.5"/><rect x="3" y="13.5" width="7.5" height="7.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5"/></svg></div><div><div class="qp-title">Limited Slots by Design</div><div class="qp-desc">We cap each billboard at 12 Premium slots. Scarcity is a feature — your brand is never lost in a sea of competitors.</div></div></div>
 </div>
 </div>
 </div>
@@ -898,7 +899,7 @@ Send Message
 <div class="book-trust-inner">
 <div class="trust-item"><div class="trust-icon">⚡</div><div><div class="trust-text-main">Confirmed in 24 hrs</div><div class="trust-text-sub">Fast turnaround</div></div></div>
 <div class="trust-item"><div class="trust-icon">📍</div><div><div class="trust-text-main">Sea Point · Live Now</div><div class="trust-text-sub">323 Main Road, Cape Town</div></div></div>
-<div class="trust-item"><div class="trust-icon">🎯</div><div><div class="trust-text-main">No Hidden Fees</div><div class="trust-text-sub">Transparent pricing</div></div></div>
+<div class="trust-item"><div class="trust-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></div><div><div class="trust-text-main">No Hidden Fees</div><div class="trust-text-sub">Transparent pricing</div></div></div>
 </div>
 </div>
 <div class="book-body">
